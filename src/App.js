@@ -9,6 +9,7 @@ function App() {
       <Lightbulb/>
       <MyName/>
       <Double/>
+
       <Burger/>
     </div>
   );

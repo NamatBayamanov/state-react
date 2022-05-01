@@ -1,14 +1,49 @@
-
-
-
 .Burger {
-
-  & .content {
-
-  }
+  border: 2px solid black;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.dropbtn {
+  display: inline-block;
+  position: relative;
 }
 
-.content.active {
-  color: rgb(255, 0, 0);
-  font-size: 25px;
+.dropdown {
+  display: inline-block;
+  padding: 1rem;
+  background-color: blue;
+  border-radius: 1rem;
+  color: white;
+  font-style: italic;
+  text-shadow: 3px 3px 2px red, 2px 2px 1px black, 1px 1px 0px rgb(44, 255, 2);
+}
+
+.Burger .list {
+  display: none;
+  position: absolute;
+  top: 51px;
+  left: 3px;
+  background-color: black;
+  border-radius: .5rem;
+  padding: .5rem;
+  width: 160px;
+}
+
+.list a {
+  display: inline-block;
+  color: blue;
+  padding: .5rem;
+  font-size: 18px;
+
+}
+.list a:hover {
+  color: red;
+}
+
+.Burger .list{
+  display: none;
+}
+
+.dropbtn:hover .list {
+  display: inline-block;
 }

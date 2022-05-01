@@ -1,4 +1,3 @@
-import { toBeEmpty } from "@testing-library/jest-dom/dist/matchers";
 import { useState } from "react";
 import classes from "./MyName.module.scss";
 
