@@ -5,12 +5,12 @@ import classes from "./Double.module.scss";
 function Double() {
 
   const [charging, setCharging] = useState({
-    phone: "with mobile",
-    user: "Namat",
+    phone: true,
+    user: true,
   });
 
   function onChargingChange() {
-    setCharging(charging.user = "Bakyt", charging.phone = "sumsung",);
+      setCharging(!charging);
   };
 
 
@@ -21,7 +21,7 @@ function Double() {
       <div className={classes.Double}>
         <div className={classes.content}>
           <p>
-            I called my friend {charging.user} {charging.phone}.
+            I called my friend {charging.user ? "Bakyt" : "Namat"} {charging.phone ? "with Mobile" : "with Sumsung"}.
           </p>
           <button onClick={onChargingChange}>
             change information

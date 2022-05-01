@@ -1,3 +1,4 @@
+import Burger from "./components/Burger/Burger";
 import Double from "./components/Double/Double";
 import Lightbulb from "./components/Lightbulb/Lightbulb";
 import MyName from "./components/MyName/MyName";
@@ -8,6 +9,7 @@ function App() {
       <Lightbulb/>
       <MyName/>
       <Double/>
+      <Burger/>
     </div>
   );
 }
