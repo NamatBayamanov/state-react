@@ -1,6 +1,7 @@
 import Burger from "./components/Burger/Burger";
 import Double from "./components/Double/Double";
 import Lightbulb from "./components/Lightbulb/Lightbulb";
+import MenuBurger from "./components/MenuBurger/MenuBurger";
 import MyName from "./components/MyName/MyName";
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
       <Double/>
 
       <Burger/>
+
+      <MenuBurger/>
     </div>
   );
 }
