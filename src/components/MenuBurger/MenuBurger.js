@@ -1,19 +1,36 @@
+import { useState } from "react";
 import Logo from "../Logo/Logo";
 import classes from "./MenuBurger.module.scss";
 
 
 function MenuBurger() {
+
+  const [actives, setActives] = useState(false);
+
+  function buttonX(event) {
+    setActives(!actives);
+  };
+
+
+
+  
+
   return (
     <>
-      <div className={classes.MenuBurger}>
-        <nav className={classes.navbar}>
 
+    
+
+      <div className={classes.MenuBurger}>
+
+
+        <nav className={classes.navbar}>
+        
           <div className={classes.logo}>
-            <Logo/>
+            <Logo />
           </div>
 
 
-          <ul className={classes.list}>
+          <ul className={`${classes.list} ${actives ? `${classes.active}` : "" }`}>
             <li>
               <a href="/">
                 hello
@@ -40,6 +57,21 @@ function MenuBurger() {
               </a>
             </li>
           </ul>
+
+
+            
+              <div className={ `${classes.external} ${actives ? `${classes.active}` : "" }` } onClick={buttonX}>
+
+
+                <aside className={`${classes.second}`}>
+                  
+                </aside>
+
+
+              </div>
+
+            
+          
         </nav>
       </div>
 

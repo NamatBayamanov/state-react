@@ -3,13 +3,13 @@ import classes from"./Lightbulb.module.scss";
 
 
 function Lightbulb(props) {
+  let toggle = "Toggle";
 
   const [isOn, setIsOn] = useState(true);
 
-  function getButton() {
+  function getButton(event) {
     setIsOn(!isOn);
   }
-
 
 
   return (
@@ -31,3 +31,19 @@ function Lightbulb(props) {
 }
 
 export default Lightbulb;
+
+
+
+
+
+// import { React } from "react";
+//   function App() { 
+//     let saveData = () =>{ 
+//       localStorage. setItem('Object 1', "test object"); 
+//     } 
+
+//   return ( <div> 
+//     <button onClick={saveData}>Save! </button> 
+//     </div> ); }
+  
+//   export default App;
